@@ -56,9 +56,6 @@ $entireCodeBeforeSemicolon = $_SESSION['entireCode'];
             <div style="background-color: #F4F7FF;" class="kt-portlet kt-portlet--skin-solid kt-portlet--">
                 <div class="kt-portlet__head">
                     <div class="kt-portlet__head-label">
-                       <h3 class="kt-portlet__head-title kt-font-brand">
-                            Complexity of the Program due to Control Structures
-                        </h3>
                     </div>
 
                 </div>
