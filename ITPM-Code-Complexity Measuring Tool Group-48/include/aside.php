@@ -2,23 +2,12 @@
 <!-- begin::Body -->
 	<body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--fixed kt-subheader--enabled kt-subheader--solid kt-aside--enabled kt-aside--fixed kt-page--loading">
 
+
+
+
 		<!-- begin:: Page -->
 
-		<!-- begin:: Header Mobile -->
-		<div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
-			<div class="kt-header-mobile__logo">
-                <button style="background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden; outline:none;" type="button" id="kt_sweetalert_demo_81" href="index.php">
-                <img alt="Logo" src="assets/media/logos/logo-2-sm.png" />
-                </button>
-			</div>
-			<div class="kt-header-mobile__toolbar">
-				<button class="kt-header-mobile__toolbar-toggler kt-header-mobile__toolbar-toggler--left" id="kt_aside_mobile_toggler"><span></span></button>
-				<button class="kt-header-mobile__toolbar-toggler" id="kt_header_mobile_toggler"><span></span></button>
-				<button class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon-more"></i></button>
-			</div>
-		</div>
-
-		<!-- end:: Header Mobile -->
+		
 		<div class="kt-grid kt-grid--hor kt-grid--root">
 			<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
 
@@ -27,7 +16,7 @@
 				<div class="kt-aside  kt-aside--fixed  kt-grid__item kt-grid kt-grid--desktop kt-grid--hor-desktop" id="kt_aside">
 
 					<!-- begin:: Aside -->
-					
+					<div >
 						<div class="kt-aside__brand-logo">
 
                             <?php
@@ -36,19 +25,21 @@
                             $link_array = explode('/',$link);
                             $page = end($link_array);
 
-                            if ($page == "change_weight.php") { ?>
+                            if ($page == "change_weight.php" || $page == "stats.php") { ?>
 
 							<button style="background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden; outline:none;" type="button" >
-								<img alt="Logo" src="assets/media/logos/logo-4.png" />
+								
                             </button>
 
                         <?php }else{ ?>
-                               
+                                <button style="background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden; outline:none;" type="button" id="kt_sweetalert_demo_8" href="index.php">
+                                    
+                                </button>
                          <?php   } ?>
 
 
 						</div>
-					
+					</div>
 
 
 
@@ -67,7 +58,7 @@
 
                                 if ($page == "size.php") { ?>
 
-                                    <li class="kt-menu__item " aria-haspopup="true"> <button style="background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden; outline:none;" type="button" id="kt_sweetalert_demo_82" href="index.php" class="kt-menu__link "><span class="kt-menu__link-text">Add Code</span></button></li>
+                                    <li class="kt-menu__item " aria-haspopup="true"> <button style="background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden; outline:none;" type="button" id="kt_sweetalert_demo_82" href="index.php" class="kt-menu__link "><span class="kt-menu__link-text">Add New</span></button></li>
                                     <li class="kt-menu__item kt-menu__item--active" data-ktmenu-submenu-toggle="hover"><a href="size.php" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Size</span></a></li>
                                     <li class="kt-menu__item"><a href="variables.php" class="kt-menu__link "><span class="kt-menu__link-text">Variables</span></a></li>
                                     <li class="kt-menu__item "><a href="methods.php" class="kt-menu__link "><span class="kt-menu__link-text">Methods</span></a></li>
@@ -79,7 +70,7 @@
                                     <?php
                                 }elseif ($page == "variables.php"){ ?>
 
-                                    <li class="kt-menu__item " aria-haspopup="true"> <button style="background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden; outline:none;" type="button" id="kt_sweetalert_demo_82" href="index.php" class="kt-menu__link "><span class="kt-menu__link-text">Add Code</span></button></li>
+                                    <li class="kt-menu__item " aria-haspopup="true"> <button style="background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden; outline:none;" type="button" id="kt_sweetalert_demo_82" href="index.php" class="kt-menu__link "><span class="kt-menu__link-text">Add New</span></button></li>
                                     <li class="kt-menu__item" data-ktmenu-submenu-toggle="hover"><a href="size.php" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Size</span></a></li>
                                     <li class="kt-menu__item kt-menu__item--active"><a href="variables.php" class="kt-menu__link "><span class="kt-menu__link-text">Variables</span></a></li>
                                     <li class="kt-menu__item"><a href="methods.php" class="kt-menu__link "><span class="kt-menu__link-text">Methods</span></a></li>
@@ -91,7 +82,7 @@
                                     <?php
                                 }elseif ($page == "methods.php"){ ?>
 
-                                    <li class="kt-menu__item " aria-haspopup="true"> <button style="background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden; outline:none;" type="button" id="kt_sweetalert_demo_82" href="index.php" class="kt-menu__link "><span class="kt-menu__link-text">Add Code</span></button></li>
+                                    <li class="kt-menu__item " aria-haspopup="true"> <button style="background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden; outline:none;" type="button" id="kt_sweetalert_demo_82" href="index.php" class="kt-menu__link "><span class="kt-menu__link-text">Add New</span></button></li>
                                     <li class="kt-menu__item" data-ktmenu-submenu-toggle="hover"><a href="size.php" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Size</span></a></li>
                                     <li class="kt-menu__item"><a href="variables.php" class="kt-menu__link "><span class="kt-menu__link-text">Variables</span></a></li>
                                     <li class="kt-menu__item kt-menu__item--active"><a href="methods.php" class="kt-menu__link "><span class="kt-menu__link-text">Methods</span></a></li>
@@ -104,7 +95,7 @@
                                 }
                                 elseif ($page == "inheritance.php"){ ?>
 
-                                    <li class="kt-menu__item " aria-haspopup="true"> <button style="background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden; outline:none;" type="button" id="kt_sweetalert_demo_82" href="index.php" class="kt-menu__link "><span class="kt-menu__link-text">Add Code</span></button></li>
+                                    <li class="kt-menu__item " aria-haspopup="true"> <button style="background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden; outline:none;" type="button" id="kt_sweetalert_demo_82" href="index.php" class="kt-menu__link "><span class="kt-menu__link-text">Add New</span></button></li>
                                     <li class="kt-menu__item" data-ktmenu-submenu-toggle="hover"><a href="size.php" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Size</span></a></li>
                                     <li class="kt-menu__item"><a href="variables.php" class="kt-menu__link "><span class="kt-menu__link-text">Variables</span></a></li>
                                     <li class="kt-menu__item"><a href="methods.php" class="kt-menu__link "><span class="kt-menu__link-text">Methods</span></a></li>
@@ -116,7 +107,7 @@
                                     <?php
                                 }elseif ($page == "coupling.php"){ ?>
 
-                                    <li class="kt-menu__item " aria-haspopup="true"> <button style="background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden; outline:none;" type="button" id="kt_sweetalert_demo_82" href="index.php" class="kt-menu__link "><span class="kt-menu__link-text">Add Code</span></button></li>
+                                    <li class="kt-menu__item " aria-haspopup="true"> <button style="background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden; outline:none;" type="button" id="kt_sweetalert_demo_82" href="index.php" class="kt-menu__link "><span class="kt-menu__link-text">Add New</span></button></li>
                                     <li class="kt-menu__item" data-ktmenu-submenu-toggle="hover"><a href="size.php" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Size</span></a></li>
                                     <li class="kt-menu__item"><a href="variables.php" class="kt-menu__link "><span class="kt-menu__link-text">Variables</span></a></li>
                                     <li class="kt-menu__item"><a href="methods.php" class="kt-menu__link "><span class="kt-menu__link-text">Methods</span></a></li>
@@ -128,7 +119,7 @@
                                     <?php
                                 }elseif ($page == "control_structures.php"){ ?>
 
-                                    <li class="kt-menu__item " aria-haspopup="true"> <button style="background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden; outline:none;" type="button" id="kt_sweetalert_demo_82" href="index.php" class="kt-menu__link "><span class="kt-menu__link-text">Add Code</span></button></li>
+                                    <li class="kt-menu__item " aria-haspopup="true"> <button style="background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden; outline:none;" type="button" id="kt_sweetalert_demo_82" href="index.php" class="kt-menu__link "><span class="kt-menu__link-text">Add New</span></button></li>
                                     <li class="kt-menu__item" data-ktmenu-submenu-toggle="hover"><a href="size.php" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Size</span></a></li>
                                     <li class="kt-menu__item"><a href="variables.php" class="kt-menu__link "><span class="kt-menu__link-text">Variables</span></a></li>
                                     <li class="kt-menu__item"><a href="methods.php" class="kt-menu__link "><span class="kt-menu__link-text">Methods</span></a></li>
@@ -140,30 +131,40 @@
                                     <?php
                                 }elseif ($page == "index.php"){ ?>
 
-                                    <li class="kt-menu__item kt-menu__item--active" aria-haspopup="true"><a href="index.php" class="kt-menu__link "><span class="kt-menu__link-text">Add Code</span></a></li>
-                                    <li class="kt-menu__item" data-ktmenu-submenu-toggle="hover"><a href="size.php" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Size</span></a></li>
-                                    <li class="kt-menu__item"><a href="variables.php" class="kt-menu__link "><span class="kt-menu__link-text">Variables</span></a></li>
-                                    <li class="kt-menu__item "><a href="methods.php" class="kt-menu__link "><span class="kt-menu__link-text">Methods</span></a></li>
-                                    <li class="kt-menu__item" data-ktmenu-submenu-toggle="hover"><a href="inheritance.php" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Inheritance</span></a></li>
-                                    <li class="kt-menu__item "><a href="coupling.php" class="kt-menu__link "><span class="kt-menu__link-text">Coupling</span></a></li>
-                                    <li class="kt-menu__item " ><a href="control_structures.php" class="kt-menu__link "><span class="kt-menu__link-text"><center>Control <br>Structures</center></span></a></li>
+                                    <li class="kt-menu__item kt-menu__item--active" aria-haspopup="true"><a href="index.php" class="kt-menu__link "><span class="kt-menu__link-text">Add New</span></a></li>
+                                    <li class="kt-menu__item" data-ktmenu-submenu-toggle="hover"><a id="kt_sweetalert_demo_3_4" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Size</span></a></li>
+                                    <li class="kt-menu__item"><a id="kt_sweetalert_demo_3_4a" class="kt-menu__link "><span class="kt-menu__link-text">Variables</span></a></li>
+                                    <li class="kt-menu__item"><a id="kt_sweetalert_demo_3_4b" class="kt-menu__link "><span class="kt-menu__link-text">Methods</span></a></li>
+                                    <li class="kt-menu__item" data-ktmenu-submenu-toggle="hover"><a id="kt_sweetalert_demo_3_4c" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Inheritance</span></a></li>
+                                    <li class="kt-menu__item"><a id="kt_sweetalert_demo_3_4d" class="kt-menu__link "><span class="kt-menu__link-text">Coupling</span></a></li>
+                                    <li class="kt-menu__item" ><a id="kt_sweetalert_demo_3_4e" class="kt-menu__link "><span class="kt-menu__link-text"><center>Control <br>Structures</center></span></a></li>
+
+                                    <?php
+                                }elseif ($page == "stats.php"){ ?>
+                                    <li class="kt-menu__item kt-menu__item--active" aria-haspopup="true"><a href="index.php" class="kt-menu__link "><span class="kt-menu__link-text">Add New</span></a></li>
+                                    <li class="kt-menu__item" data-ktmenu-submenu-toggle="hover"><a id="kt_sweetalert_demo_3_4" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Size</span></a></li>
+                                    <li class="kt-menu__item"><a id="kt_sweetalert_demo_3_4a" class="kt-menu__link "><span class="kt-menu__link-text">Variables</span></a></li>
+                                    <li class="kt-menu__item "><a id="kt_sweetalert_demo_3_4b" class="kt-menu__link "><span class="kt-menu__link-text">Methods</span></a></li>
+                                    <li class="kt-menu__item" data-ktmenu-submenu-toggle="hover"><a id="kt_sweetalert_demo_3_4c" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Inheritance</span></a></li>
+                                    <li class="kt-menu__item "><a id="kt_sweetalert_demo_3_4d" class="kt-menu__link "><span class="kt-menu__link-text">Coupling</span></a></li>
+                                    <li class="kt-menu__item " ><a id="kt_sweetalert_demo_3_4e" class="kt-menu__link "><span class="kt-menu__link-text"><center>Control <br>Structures</center></span></a></li>
+
 
                                     <?php
                                 }elseif ($page == "change_weight.php"){ ?>
-
-                                    <li class="kt-menu__item kt-menu__item--active" aria-haspopup="true"><a href="index.php" class="kt-menu__link "><span class="kt-menu__link-text">Add Code</span></a></li>
-                                    <li class="kt-menu__item" data-ktmenu-submenu-toggle="hover"><a href="size.php" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Size</span></a></li>
-                                    <li class="kt-menu__item"><a href="variables.php" class="kt-menu__link "><span class="kt-menu__link-text">Variables</span></a></li>
-                                    <li class="kt-menu__item "><a href="methods.php" class="kt-menu__link "><span class="kt-menu__link-text">Methods</span></a></li>
-                                    <li class="kt-menu__item" data-ktmenu-submenu-toggle="hover"><a href="inheritance.php" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Inheritance</span></a></li>
-                                    <li class="kt-menu__item "><a href="coupling.php" class="kt-menu__link "><span class="kt-menu__link-text">Coupling</span></a></li>
-                                    <li class="kt-menu__item " ><a href="control_structures.php" class="kt-menu__link "><span class="kt-menu__link-text"><center>Control <br>Structures</center></span></a></li>
+                                    <li class="kt-menu__item kt-menu__item--active" aria-haspopup="true"><a href="index.php" class="kt-menu__link "><span class="kt-menu__link-text">Add New</span></a></li>
+                                    <li class="kt-menu__item" data-ktmenu-submenu-toggle="hover"><a id="kt_sweetalert_demo_3_4" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Size</span></a></li>
+                                    <li class="kt-menu__item"><a id="kt_sweetalert_demo_3_4a" class="kt-menu__link "><span class="kt-menu__link-text">Variables</span></a></li>
+                                    <li class="kt-menu__item "><a id="kt_sweetalert_demo_3_4b" class="kt-menu__link "><span class="kt-menu__link-text">Methods</span></a></li>
+                                    <li class="kt-menu__item" data-ktmenu-submenu-toggle="hover"><a id="kt_sweetalert_demo_3_4c" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Inheritance</span></a></li>
+                                    <li class="kt-menu__item "><a id="kt_sweetalert_demo_3_4d" class="kt-menu__link "><span class="kt-menu__link-text">Coupling</span></a></li>
+                                    <li class="kt-menu__item " ><a id="kt_sweetalert_demo_3_4e" class="kt-menu__link "><span class="kt-menu__link-text"><center>Control <br>Structures</center></span></a></li>
 
 
                                     <?php
                                 }else{ ?>
 
-                                    <li class="kt-menu__item " aria-haspopup="true"> <button style="background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden; outline:none;" type="button" id="kt_sweetalert_demo_82" href="index.php" class="kt-menu__link "><span class="kt-menu__link-text">Add Code</span></button></li>
+                                    <li class="kt-menu__item " aria-haspopup="true"> <button style="background-color: Transparent; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden; outline:none;" type="button" id="kt_sweetalert_demo_82" href="index.php" class="kt-menu__link "><span class="kt-menu__link-text">Add New</span></button></li>
                                     <li class="kt-menu__item" data-ktmenu-submenu-toggle="hover"><a href="size.php" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Size</span></a></li>
                                     <li class="kt-menu__item"><a href="variables.php" class="kt-menu__link "><span class="kt-menu__link-text">Variables</span></a></li>
                                     <li class="kt-menu__item "><a href="methods.php" class="kt-menu__link "><span class="kt-menu__link-text">Methods</span></a></li>
@@ -199,8 +200,9 @@
                             <div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile  kt-header-menu--layout-tab ">
                                 <ul class="kt-menu__nav ">
 
+                                    <li class="kt-menu__item  kt-menu__item--active " aria-haspopup="true"><span style="font-size: 20px;font-family: 'Fira Code'" class="kt-menu__link-text">Code Complexity Measuring Tool</span></a></li>
                                     
-                                    <li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel ">Code Complexity Measuring Tool</li>
+                                    </li>
 
                                 </ul>
 
@@ -213,39 +215,12 @@
                         <!-- begin:: Header Topbar -->
                         <div class="kt-header__topbar">
 
-						    
-							<!--begin: User Bar -->
-                            <div class="kt-header__topbar-item kt-header__topbar-item--user">
-                                <div class="kt-header__topbar-wrapper" data-toggle="" data-offset="0px,0px">
-                                    <div class="kt-header__topbar-user">
-									</div>
-                                </div>
-                                <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-xl">
 
-                                    
-									<!--begin: Head -->
-                                    <div class="kt-user-card kt-user-card--skin-dark kt-notification-item-padding-x">
-                                        <div class="kt-user-card__avatar">
-                                        </div>
-                                    </div>
-									<!--end: Head -->
 
-                                    
-									<!--begin: Navigation -->
-                                    <div class="kt-notification">
-                                        
-                                            <div class="kt-notification__item-icon">
-                                                <i class="flaticon2-calendar-3 kt-font-success"></i>
-                                            </div>
-                                            <div class="kt-notification__item-details">
-                                            </div>
-                                     </div>
 
-                                    <!--end: Navigation -->
-                                </div>
-                            </div>
 
-                            <!--end: User Bar -->
+
+                            
                         </div>
 
                         <!-- end:: Header Topbar -->

@@ -7,6 +7,7 @@ class Extractor {
      */
 
     public static function extract($archive, $destination){
+        $res = 0;
         $ext = pathinfo($archive, PATHINFO_EXTENSION);
         switch ($ext){
             case 'zip':

@@ -29,7 +29,22 @@ var KTSweetAlert2Demo = function() {
         });
 
         $('#kt_sweetalert_demo_3_4').click(function(e) {
-            swal.fire("Good job!", "You clicked the button!", "info");
+            swal.fire("Add a new program first!", "First, You need to upload a program to measure complexity.", "info");
+        });
+        $('#kt_sweetalert_demo_3_4a').click(function(e) {
+            swal.fire("Add a new program first!", "First, You need to upload a program to measure complexity.", "info");
+        });
+        $('#kt_sweetalert_demo_3_4b').click(function(e) {
+            swal.fire("Add a new program first!", "First, You need to upload a program to measure complexity.", "info");
+        });
+        $('#kt_sweetalert_demo_3_4c').click(function(e) {
+            swal.fire("Add a new program first!", "First, You need to upload a program to measure complexity.", "info");
+        });
+        $('#kt_sweetalert_demo_3_4d').click(function(e) {
+            swal.fire("Add a new program first!", "First, You need to upload a program to measure complexity.", "info");
+        });
+        $('#kt_sweetalert_demo_3_4e').click(function(e) {
+            swal.fire("Add a new program first!", "First, You need to upload a program to measure complexity.", "info");
         });
 
         $('#kt_sweetalert_demo_3_5').click(function(e) {
@@ -117,7 +132,6 @@ var KTSweetAlert2Demo = function() {
             }
 
         });
-
 
         $('#kt_sweetalert_demo_81').click(function(e) {
 
